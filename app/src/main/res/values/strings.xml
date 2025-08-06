@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">Aplicación Seguridad Loma</string>
+
+    <!-- MainActivity strings -->
+    <string name="toolbar_title">🔒 Gestión de Permisos</string>
+    <string name="status_permission_granted">✅ Permiso concedido correctamente</string>
+    <string name="btn_refresh">🔄 Actualizar</string>
+    <string name="btn_settings">⚙️ Configuración</string>
+    <string name="permissions_title">📱 Permisos de la Aplicación</string>
+    <string name="logs_title">📝 Historial de Actividad</string>
+    <string name="btn_clear_logs">🗑️ Limpiar</string>
+
+    <!-- PrivacyPolicyActivity strings -->
+    <string name="privacy_app_title">Bienvenido a Privacy App</string>
+    <string name="btn_accept">✅ Acepto los Términos y Condiciones</string>
+    <string name="btn_decline">❌ Rechazar y Salir</string>
+
+    <!-- Privacy Policy Text -->
+    <string name="privacy_policy_text">📋 POLÍTICA DE PRIVACIDAD Y TÉRMINOS DE USO\n\n🔒 Protección de Datos Personales\nEsta aplicación solicita acceso a ciertos permisos sensibles de su dispositivo únicamente para fines educativos y de demostración de mejores prácticas de seguridad.\n\n📱 Permisos Solicitados:\n• Cámara: Para captura de imágenes y videos\n• Galería: Para acceso a medios almacenados\n• Micrófono: Para grabación de audio\n• Teléfono: Para realizar llamadas\n• Contactos: Para acceso a información de contacto\n• Ubicación: Para servicios basados en localización\n\n🛡️ Compromiso de Seguridad:\n• No recopilamos ni almacenamos datos personales\n• No compartimos información con terceros\n• Los permisos se solicitan siguiendo las mejores prácticas de Android\n• Puede revocar permisos en cualquier momento desde Configuración\n\n⚖️ Sus Derechos:\n• Derecho a denegar cualquier permiso\n• Derecho a revocar permisos concedidos\n• Derecho a conocer el uso de sus datos\n• Derecho a eliminar datos de la aplicación\n\nAl continuar, acepta estos términos y confirma que comprende el uso de sus datos personales.</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <!-- Dot indicator -->
+            <View
+                android:id="@+id/dot_indicator"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/accent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_log_permission" />
+
+            <!-- Nombre del permiso -->
+            <TextView
+                android:id="@+id/tv_log_permission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/tv_log_action"
+                app:layout_constraintStart_toEndOf="@id/dot_indicator"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Cámara" />
+
+            <!-- Acción realizada -->
+            <TextView
+                android:id="@+id/tv_log_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_log_permission"
+                tools:text="CONCEDIDO"
+                tools:textColor="@android:color/holo_green_dark" />
+
+            <!-- Timestamp -->
+            <TextView
+                android:id="@+id/tv_log_timestamp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dot_indicator"
+                app:layout_constraintTop_toBottomOf="@id/tv_log_permission"
+                tools:text="05/08/2025 14:30:25" />
+
+            <!-- Detalles adicionales -->
+            <TextView
+                android:id="@+id/tv_log_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dot_indicator"
+                app:layout_constraintTop_toBottomOf="@id/tv_log_timestamp"
+                tools:text="Usuario canceló desde rationale"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
